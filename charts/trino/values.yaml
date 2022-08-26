@@ -153,6 +153,7 @@ serviceAccount:
   annotations: {}
 
 secretMounts: []
+  # Shared secretMounts on both coordinator and workers
 
 coordinator:
   jvm:
@@ -189,6 +190,12 @@ coordinator:
     # failureThreshold: 6
     # successThreshold: 1
 
+  secretMounts: []
+    # Coordinator only secretMounts
+    # - name: sample-secret  
+    #   secretName: sample-secret
+    #   path: /secrets/sample.json
+
 worker:
   jvm:
     maxHeapSize: "8G"
@@ -223,6 +230,12 @@ worker:
     # timeoutSeconds: 5
     # failureThreshold: 6
     # successThreshold: 1
+
+  secretMounts: []
+    # Worker only secretMounts
+    # - name: sample-secret  
+    #   secretName: sample-secret
+    #   path: /secrets/sample.json
 
 kafka:
   mountPath: "/etc/trino/schemas"
