@@ -1,10 +1,10 @@
 
 Trino Community Kubernetes Helm Charts
 ===========
-[![CI/CD](https://github.com/trinodb/charts/actions/workflows/ci-cd.yaml/badge.svg?branch=main)](https://github.com/trinodb/charts/actions/workflows/ci-cd.yaml)
 
 Fast distributed SQL query engine for big data analytics that helps you explore your data universe
 
+This version includes [kempso's secretMounts branch](https://github.com/kempspo/charts/tree/secretMounts), also in [PR46](https://github.com/trinodb/charts/pull/46).
 
 ## Usage
 
@@ -14,7 +14,7 @@ Please refer to Helm's [documentation](https://helm.sh/docs/) to get started.
 Once Helm is set up properly, add the repo as follows:
 
 ```console
-helm repo add trino https://trinodb.github.io/charts/
+helm repo add trino https://andybrennan.github.io/charts/
 ```
 
 You can then run `helm search repo trino` to see the charts.
@@ -22,7 +22,7 @@ You can then run `helm search repo trino` to see the charts.
 Then you can install chart using:
 
 ```console
-helm install my-trino trino/trino --version 0.8.0
+helm install my-trino trino/trino --version 0.8.1
 ```
 
 ## Documentation
