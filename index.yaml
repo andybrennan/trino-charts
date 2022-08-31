@@ -3,7 +3,7 @@ entries:
   trino:
   - apiVersion: v2
     appVersion: "375"
-    created: "2022-08-31T14:31:34.415927+01:00"
+    created: "2022-08-31T15:04:39.80672+01:00"
     description: Fast distributed SQL query engine for big data analytics that helps
       you explore your data universe
     digest: dfc4871d65d7d0417e5f6cefc6cbf3c0b098b212f416f8a92ca15c786b1a64e5
@@ -19,4 +19,4 @@ entries:
     urls:
     - trino-0.8.1.tgz
     version: 0.8.1
-generated: "2022-08-31T14:31:34.414346+01:00"
+generated: "2022-08-31T15:04:39.804426+01:00"
