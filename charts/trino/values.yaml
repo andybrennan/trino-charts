@@ -124,9 +124,9 @@ initContainers: {}
   #     image: busybox:1.28
   #     command: ['sh', '-c', 'echo The worker is running! && sleep 3600']
 
-securityContext:
-  runAsUser: 1000
-  runAsGroup: 1000
+securityContext: {}
+  # runAsUser: 1000
+  # runAsGroup: 1000
 
 service:
   type: ClusterIP
