@@ -192,7 +192,7 @@ coordinator:
 
   secretMounts: []
     # Coordinator only secretMounts
-    # - name: sample-secret  
+    # - name: sample-secret
     #   secretName: sample-secret
     #   path: /secrets/sample.json
 
@@ -233,7 +233,7 @@ worker:
 
   secretMounts: []
     # Worker only secretMounts
-    # - name: sample-secret  
+    # - name: sample-secret
     #   secretName: sample-secret
     #   path: /secrets/sample.json
 
