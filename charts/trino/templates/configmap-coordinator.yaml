@@ -53,6 +53,7 @@ data:
     discovery.uri=http://localhost:{{ .Values.service.port }}
 {{- if .Values.server.config.authenticationType }}
     http-server.authentication.type={{ .Values.server.config.authenticationType }}
+    internal-communication.shared-secret={{ randBytes 512 }}
 {{- end }}
   {{- range $configValue := .Values.additionalConfigProperties }}
     {{ $configValue }}
